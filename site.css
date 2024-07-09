@@ -1,0 +1,234 @@
+:root{/*VARIABLES*/
+
+    /*COLORS*/
+
+    --website-background-color: #18181B;
+    --active-color: #141417;
+    --cursor-color: #2b2b30;
+
+    --border-color: #222225;
+    --link-underline-color: #8B8A8B;
+
+    --main-text-color: #7A7A7B;
+    --accent-text-color: #E8E8E8;
+
+    
+
+}
+
+
+@font-face {
+    font-family: "Kodomo";
+    src: url('https://dl.dropboxusercontent.com/s/92t3t5yugg8or46/KodomoRoundedLight.otf');
+}
+
+@font-face{
+    font-family: "Watermelon";
+    src: url('https://dl.dropbox.com/scl/fi/0kw6ba5qlr70w3qu6km2n/HanyiSentyRubber.ttf?rlkey=rfw5t3g46g9iyacm470euggg0&st=0l8vohil&dl=0');
+}
+
+.icon{
+    vertical-align: middle;
+} 
+
+.icon-nav{
+    height: 17px;
+    width: 17px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#cursor{
+    height: 40px;
+    width: 40px;
+
+    position: fixed;
+    transform-origin: center;
+    z-index: 100;
+
+    border-radius: 20px;
+    opacity: 40%;
+
+    background-color: var(--cursor-color);
+
+    pointer-events:none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::selection {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    background-color: var(--website-background-color);
+    font-family: "Noto Sans";
+    color: var(--main-text-color);
+}
+
+.button{
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.link{
+    color: var(--accent-text-color);
+    border-bottom: var(--link-underline-color) dotted;
+}
+
+.form{
+    display: inline-block;
+}
+
+.section{
+    width: 100%;
+
+    padding-bottom: 25px;
+    border-bottom: solid 1px #222225;
+}
+
+
+#content{
+    height: auto;
+    width: 50%;
+
+    margin-top: 8%;
+    padding-left: 25%;
+    padding-right: 25%;
+
+    position: absolute;
+
+    line-height: 1.75;
+
+
+}
+
+#navigationBar{
+    height: 3%;
+    width: 50%;
+
+    padding: 1.5% 25% 1.5% 25%;
+
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    
+
+    border-bottom: solid 1px #222225;
+    backdrop-filter: blur(5px);
+
+    background-color: rgb(24, 24, 27, 0.75);
+
+}
+
+#title{
+    margin-top: -3px;
+
+    float: left;
+
+    font-family: "Kodomo";
+    font-size: 22px;
+
+}
+
+.text-title{
+    color: var(--accent-text-color);
+}
+
+.text-accent{
+    color: var(--accent-text-color);
+}
+
+.text-paragraph{
+    width: 100%;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+    
+
+    color:var(--main-text-color);
+}
+
+
+.button-nav{
+    height: 40px;
+    width: 40px;
+    
+    margin-top: -6px;
+    margin-left: 4px;
+    
+
+    float: right;
+
+    color: #E8E8E8;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: var(--website-background-color);
+    border: solid var(--border-color) 1px;
+    border-radius: 5px;
+}
+
+.button-form{
+    float: right;
+}
+
+#section-profile{
+    max-height: 1000px;
+
+}
+
+.audio-play-button{
+    height: 24px;
+    width: 24px;
+
+    padding:0;
+
+    display: inline-block;
+    align-items: center;
+    
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: var(--accent-text-color);
+    font-size: 15px;
+
+    background-color: var(--website-background-color);
+    border: solid var(--border-color) 1px;
+
+}
+
+.song{
+    margin-bottom: 8px;
+
+    line-height: 0;
+}
+
+.button-music{
+    height: 22px;
+    width: auto;
+}
+
+
+#footer{
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    font-size: 12px;
+    color: var(--main-text-color);
+}
