@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function () {
 
     feather.replace();
 
@@ -234,5 +234,4 @@ function changeLanguage(lang){
                 break;
         }
     }
-
-})(jQuery);
+});
