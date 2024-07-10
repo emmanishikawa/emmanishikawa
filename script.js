@@ -1,5 +1,6 @@
 
 //-----------------------------CURSOR AND MOUSE MOVEMENT--------------------------
+$(function() {
 
     let cursor = $('#cursor');
 
@@ -10,4 +11,5 @@
     });
 
 
+})(jQuery);
 
