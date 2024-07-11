@@ -7,14 +7,9 @@ $(function() {
 
     let song_1 = $('#song-1-button');
     let song_2 = $('#song-2-button');
-
-    import sound_1 from 'assets/audio/audio-gathermytears.mp3';
-
-    import sound_2 from 'assets/audio/audio-odoriko.mp3';
     
-    
-    var audio_1 = new Audio(sound_1);
-    var audio_2 = new Audio(sound_2);
+    var audio_1 = new Audio('https://raw.githubusercontent.com/emmanishikawa/emmanishikawa/main/assets/audio/audio-gathermytears.mp3');
+    var audio_2 = new Audio('https://raw.githubusercontent.com/emmanishikawa/emmanishikawa/main/assets/audio/audio-odoriko.mp3');
 
     let play_audio = $('[class="toggle-play"]');
     let pause_audio = $('[class="toggle-pause"]');
