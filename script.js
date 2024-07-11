@@ -9,8 +9,8 @@ $(function() {
     let song_2 = $('#song-2-button');
     
     
-    var audio_1 = new Audio("assets/audio/audio-gathermytears.mp3");
-    var audio_2 = new Audio("assets/audio/audio-odoriko.mp3");
+    var audio_1 = new Audio("https://github.com/emmanishikawa/emmanishikawa/blob/main/assets/audio/audio-gathermytears.mp3?raw=true");
+    var audio_2 = new Audio("https://github.com/emmanishikawa/emmanishikawa/blob/main/assets/audio/audio-odoriko.mp3?raw=true");
 
     let play_audio = $('[class="toggle-play"]');
     let pause_audio = $('[class="toggle-pause"]');
