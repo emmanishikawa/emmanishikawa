@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>emma nishikawa</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-star.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Hi+Melody&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <div id="navigationBar">
+
+        <a id="title" class="text-title button">
+            <span lang="en">Emma Nishikawa</span>
+            <span lang="zh">西川愛真</span>
+            <span lang="jp">西川 愛真</span>
+            <span lang="kr">니시카와　애진</span>
+        </a>
+
+        <button id="button-lang" class="button button-nav">A</button>
+
+        <form target="-blank" action="mailto:emmanishikawa@gmail.com" class = "button-form">
+            <button id="button-email" class="button button-nav" type="submit">
+                <i class="icon icon-nav" data-feather="mail"></i>
+            </button>
+        </form>
+
+        <form target="-blank" action="https://www.linkedin.com/in/emma-n-43240226b/" class = "button-form">
+            <button id="add-info-button" class="button button-nav">
+                <i class="icon icon-nav" data-feather="linkedin"></i>
+            </button>
+        </form>
+        
+
+    </div>
+    
+    <div id="content">
+
+        
+
+        <div id="section-profile" class="section">
+            <h1 class="text-title">
+                 
+                <span lang="en">introduction:</span>
+                <span lang="zh">簡介：</span>
+                <span lang="jp">概要：</span>
+                <span lang="kr">정보:</span>
+            </h1>
+
+
+            <p class="text-paragraph">
+                <span lang="en">
+                    Hello, I'm Emma Nishikawa, an undergraduate student studying cognitive science with a specialization in design and interaction @ 
+                    <a class="button link" target="-blank" href="https://ucsd.edu/">UC San Diego</a>
+                    .
+                    <br>
+                    <br>
+                    I believe a simple, functional design can facilitate seamless and effective communication across languages.&nbsp;
+                    With a focus on improving my natural and computer language skills, I hope to transform how we communicate with others worldwide.
+                    <br>
+                    <br>
+                    When I am not studying or working, you can find me in a cafe drinking bubble tea and listening to the latest Newjeans song 🐰
+
+
+                </span>
+                <span lang="zh">大家好，我是西川愛真，
+                    <a class="button link" target="-blank" href="https://ucsd.edu/">UC San Diego</a>
+                    學習認知科學的大學生。
+                    <br>
+                    <br>
+                    something
+                    <br>
+                    <br>
+                    我沒有在唸書或工作的時候我大部分會在咖啡店喝珍珠奶茶和聽Newjeans的最新的歌🐰
+                </span>
+
+                <span lang="jp">
+                    初めまして、 私は
+                    <a class="button link" target="-blank" href="https://ucsd.edu/">UC San Diego</a>
+                    で認知科学を学んでいる大学生の西川愛真です。
+                    <br>
+                    <br>
+                    something
+                    <br>
+                    <br>
+                </span>
+                <span lang="kr">
+                    안녕하세요, 저는 
+                    <a class="button link" target="-blank" href="https://ucsd.edu/">UC San Diego</a>
+                    에서 인지과학을 공부하고 있는 대학생 니시카와 애진입니다.
+                    <br>
+                    <br>
+                    something
+                    <br>
+                    <br>
+                    공부를 안 하고 일을 안 해때 저는 보통 카페에 가서 버블티를 마시고 뉴진스 신곡을 듣습니다 🐰
+                </span>
+            </p>
+
+            <p class="text-paragraph">
+                <span lang="en">Listen to my favorite songs at the moment:</span>
+                <span lang="zh">請你聽我現在最喜歡的歌：</span>
+                <span lang="jp">私の一番好きな歌を聞いてください：</span>
+                <span lang="kr">제가 제일 좋아하는 노래들를 들어보세요:</span>
+            </p>
+
+            <div class = "text-accent" id="songs-list">
+
+                <div id = "song-1" class = "song">
+                    <button id="song-1-button" class="button audio-play-button">
+                        <span id="audio-play-1" class="toggle-play"><i class="icon button-music" data-feather="play-circle"></i></span>
+                        <span id="audio-pause-1" class="toggle-pause"><i class="icon button-music" data-feather="pause-circle"></i></span>
+                    </button>
+                    <span lang="en">Gather My Tears - Seo Ji Won</span>
+                    <span lang="zh">Gather My Tears - Seo Ji Won</span>
+                    <span lang="jp">Gather My Tears - Seo Ji Won</span>
+                    <span lang="kr">내 눈물 모아 - 서지원</span>
+                </div>
+
+                <div id = "song-2" class = "song">
+                    <button id="song-2-button" class="button audio-play-button">
+                        <span id="audio-play-2" class="toggle-play"><i class="icon button-music" data-feather="play-circle"></i></span>
+                        <span id="audio-pause-2" class="toggle-pause"><i class="icon button-music" data-feather="pause-circle"></i></span>
+                    </button>
+                    <span lang="en">odoriko - VAUNDY</span>
+                    <span lang="zh">odoriko - VAUNDY</span>
+                    <span lang="jp">踊り子 - VAUNDY(バウンディ)</span>
+                    <span lang="kr">무희 - VAUNDY(바운디)</span>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="section-projects" class="section">
+            <h1 class="text-title">
+                 
+                <span lang="en">projects:</span>
+                <span lang="zh">工作經歷：</span>
+                <span lang="jp">職歴：</span>
+                <span lang="kr">경력 사항:</span>
+            </h1>
+        </div>
+
+
+        <div id="footer">
+            Made by Emma Nishikawa
+        </div>
+
+          
+
+    </div>
+    
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
+
