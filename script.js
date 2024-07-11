@@ -82,7 +82,7 @@ $(function() {
 
 let lang_button = $('#button-lang');
 
-var currentLang = "";
+var currentLang = "en";
 
 let en = $('[lang="en"]');
 let zh = $('[lang="zh"]');
