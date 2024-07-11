@@ -8,9 +8,9 @@ $(function() {
     let song_1 = $('#song-1-button');
     let song_2 = $('#song-2-button');
 
-    import sound_1 from '../assets/audio/audio-gathermytears.mp3.mp3';
+    import sound_1 from '../assets/audio/audio-gathermytears.mp3';
 
-    import sound_2 from '../assets/audio/audio-odoriko.mp3.mp3';
+    import sound_2 from '../assets/audio/audio-odoriko.mp3';
     
     
     var audio_1 = new Audio(sound_1);
