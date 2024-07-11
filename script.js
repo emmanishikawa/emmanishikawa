@@ -78,6 +78,81 @@ $(function() {
         });
     });
 
+//-----------------------------LANGUAGE CHANGE------------------------------------------
+
+let lang_button = $('#button-lang');
+
+var currentLang = "";
+
+let en = $('[lang="en"]');
+let zh = $('[lang="zh"]');
+let jp = $('[lang="jp"]');
+let kr = $('[lang="kr"]');
+
+changeLanguage("en");
+
+lang_button.click(function(){
+
+    switch(currentLang){
+        case "en":
+            changeLanguage("zh");
+            break;
+        case "zh":
+            changeLanguage("jp");
+            break;
+        case "jp":
+            changeLanguage("kr");
+            break;
+        case "kr":
+            changeLanguage("en");
+            break;
+        default:
+            changeLanguage("en");
+    }
+
+});
+
+function changeLanguage(lang){
+    if(currentLang !== lang){
+
+        loadContent();
+
+        en.hide();
+        zh.hide();
+        jp.hide();
+        kr.hide();
+
+     //   $('.lang-button').css("background-color", "#1A1A1D");
+
+        switch(lang){
+            case "en":
+                lang_button.text('A');
+                title.css("font-family", "Kodomo");
+                en.show();
+                break;
+            case "zh":
+                lang_button.text('中');
+                title.css("font-family", "Watermelon");
+                zh.show();
+                break;
+            case "jp":
+                lang_button.text('あ');
+                title.css("font-family", "Zen Kurenaido");
+                jp.show();
+                break;
+            case "kr":
+                lang_button.text('한');
+                title.css("font-family", "Gaegu");
+                kr.show();
+                break;
+            default:
+                break;
+        }
+
+    currentLang = lang;
+
+    }
+}
 
 })(jQuery);
 
