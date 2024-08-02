@@ -120,7 +120,7 @@ $(function() {
 //-----------------------------PAGE CHANGE------------------------------------------
 
 $("#main-proj-1").click(function(){
-    window.location.href = "projects/ccc.html";
+    window.location.href = "https://emmanishikawa.github.io/emmanishikawa/projects/ccc.html";
 });
 
 
