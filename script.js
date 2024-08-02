@@ -105,7 +105,7 @@ $(function() {
     });
 
     $('#title').on('click', function() {
-        window.location.href = "../index.html"
+        window.location.href = "https://emmanishikawa.github.io/emmanishikawa"
         
         loadContent();
       });
