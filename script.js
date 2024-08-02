@@ -105,6 +105,8 @@ $(function() {
     });
 
     $('#title').on('click', function() {
+        window.location.href = "../index.html"
+        
         loadContent();
       });
 
@@ -114,6 +116,12 @@ $(function() {
         $('#content').hide().fadeIn(800);
 
     }
+
+//-----------------------------PAGE CHANGE------------------------------------------
+
+$("#main-proj-1").click(function(){
+    window.location.href = "projects/ccc.html";
+});
 
 
 //-----------------------------LANGUAGE CHANGE------------------------------------------
