@@ -101,7 +101,7 @@ $(function() {
 //----------------------RELOAD CONTENT--------------------------
 
     $(document).ready(function() {
-        $('html, body').animate({scrollTop: '0px'}, 100);
+        $('html, body').animate({scrollTop: '0px'}, 800);
     });
 
     $('#title').on('click', function() {
@@ -112,7 +112,7 @@ $(function() {
 
     function loadContent(){
 
-        $('html, body').animate({scrollTop: '0px'}, 500);
+        $('html, body').animate({scrollTop: '0px'}, 800);
         $('#content').hide().fadeIn(800);
 
     }
