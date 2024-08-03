@@ -128,39 +128,39 @@ $("#main-proj-1").click(function(){
 
 let lang_button = $('#button-lang');
 
-var currentLang = "";
-
 let en = $('[lang="en"]');
 let zh = $('[lang="zh"]');
 let jp = $('[lang="jp"]');
 let kr = $('[lang="kr"]');
 
-changeLanguage("en");
+changeLanguage();
 
 lang_button.click(function(){
 
-    switch(currentLang){
+    switch(window.localStorage.getItem("currentLang")){
         case "en":
-            changeLanguage("zh");
+            localStorage.setItem("currentLang", "zh");
             break;
         case "zh":
-            changeLanguage("jp");
+            localStorage.setItem("currentLang", "jp");
             break;
         case "jp":
-            changeLanguage("kr");
+            localStorage.setItem("currentLang", "kr");
             break;
         case "kr":
-            changeLanguage("en");
+            localStorage.setItem("currentLang", "en");
             break;
         default:
-            changeLanguage("en");
+            localStorage.setItem("currentLang", "en");
     }
+
+    changeLanguage();
 
 });
 
-function changeLanguage(lang){
-    if(currentLang !== lang){
-
+function changeLanguage(){
+    var lang = localStorage.getItem("currentLang");
+    
         loadContent();
 
         en.hide();
@@ -192,12 +192,11 @@ function changeLanguage(lang){
                 kr.show();
                 break;
             default:
+                lang_button.text('A');
+                title.css("font-family", "Kodomo");
+                en.show();
                 break;
         }
-
-    currentLang = lang;
-
-    }
 }
 
 
