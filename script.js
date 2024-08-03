@@ -183,7 +183,7 @@ function changeLanguage(lang){
                 break;
             case "jp":
                 lang_button.text('あ');
-                title.css("font-family", "Kodomo");
+                title.css("font-family", "Zen Kurenaido");
                 jp.show();
                 break;
             case "kr":
