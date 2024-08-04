@@ -112,8 +112,8 @@ $(function() {
 
     function loadContent(){
 
-        $('html, body').animate({scrollTop: '0px'}, 800);
         $('#content').hide().fadeIn(800);
+        $('html, body').animate({scrollTop: '0px'}, 300);
 
     }
 
