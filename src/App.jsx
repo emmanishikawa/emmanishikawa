@@ -7,7 +7,16 @@ function App() {
 
   return (
     <>
-      <div id='nav-bar'></div>
+     <div id="nav-bar" className="fixed top-0 left-0 w-full bg-[#18181B] py-4 z-50">
+  <div className="w-[55%] mx-auto">
+    <a
+      id="title"
+      className="block font-[Kodomo] text-[24px] text-left ml-16 text-white"
+    >
+      Emma Nishikawa
+    </a>
+  </div>
+</div>
 
       <div className='flex justify-center'>
         <div id='content' className='flex flex-col items-center justify-center w-[55%] mt-28 text-left'>
@@ -37,10 +46,19 @@ function App() {
               <p className='font-[Nunito] text-white text-[24px] font-bold'> 
                 love (愛) film
               </p>
+              <p className='mt-5'>
+                <a className=' p-2 rounded-lg border-2 border-[#222225] text-white cursor-pointer hover:bg-[#141417] ease-in-out transition-[2s]' href='https://lovefilm-six.vercel.app/'>love film website</a>
+                <br/>
+                <br/>
+                <a className='mt-24 p-2 rounded-lg border-2 border-[#222225] text-white cursor-pointer hover:bg-[#141417] ease-in-out transition-[2s]' href='https://github.com/emmanishikawa/lovefilm'>love film github</a>
+              </p>
             </div>
             <div id='ota' className='mt-5'>
               <p className='font-[Nunito] text-white text-[24px] font-bold'> 
                 Out the Archive
+              </p>
+              <p className='mt-5 mb-5'>
+               <a className='p-2 rounded-lg border-2 border-[#222225] text-white cursor-pointer hover:bg-[#141417] ease-in-out transition-[2s]' href='https://www.outthearchive.xyz/'>Out the Archive website</a>
               </p>
             </div>
             <div id='personal-portfolio'>
