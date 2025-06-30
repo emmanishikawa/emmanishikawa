@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #18181B;
+  color: #979797;
+}
+
+@font-face {
+  font-family: 'Kodomo';
+  src: url('./fonts/kodomo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
